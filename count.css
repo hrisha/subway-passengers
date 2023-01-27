@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.main-box {
+  background-color: #fff;
+  position: relative;
+  height: 100vh;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border-radius: 10px;
+  border: 3px solid #594e3f;
+  background-color: #eee;
+  text-align: center;
+  max-width: 320px;
+  min-height: 600px;
+  z-index: 10;
+}
+
+.box p {
+  font-size: 40px;
+  color: #000;
+}
+.box .count {
+  width: 40px;
+  margin: 20px auto;
+}
+
+.box button {
+  width: 45%;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #fff;
+  border: none;
+}
+
+@media (max-width: 767px) {
+  .box button {
+    font-size: 13px;
+  }
+}
+
+.box .inc {
+  color: rgb(4, 112, 4);
+  border: 2px solid rgb(4, 112, 4);
+}
+.box .inc:hover {
+  color: #fff;
+  background-color: rgb(4, 112, 4);
+  transition: 0.5s;
+}
+
+.box .save {
+  color: #000;
+  border: 2px solid #000;
+  margin-left: 10px;
+}
+
+.box .save:hover {
+  color: #fff;
+  background-color: #000;
+  transition: 0.5s;
+}
+
+.box .reset {
+  color: #c51a1a;
+  border: 2px solid #c51a1a;
+  position: absolute;
+  bottom: 50px;
+  left: 28%;
+}
+.box .reset:hover {
+  color: #fff;
+  background-color: #c51a1a;
+  transition: 0.5s;
+}
+
+#count-example {
+  background-color: #000;
+  color: #fff;
+}
