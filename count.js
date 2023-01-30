@@ -1,26 +1,36 @@
 let inc = document.querySelector(".inc");
-let topNum = document.querySelector(".people-num");
+let peopleNumber = document.querySelector(".people-num");
 let save = document.querySelector(".save");
-let sNume = document.querySelector(".save-num");
+let savedCohorts = document.querySelector(".save-num");
 let count = 0;
 inc.onclick = function () {
   count += 1;
-  topNum.innerHTML = count;
-  bottom.innerHTML = count;
+  peopleNumber.innerHTML = count;
 };
 
 save.onclick = function () {
-  if (sNume.innerHTML === "") {
-    sNume.innerHTML += topNum.innerHTML;
+  if (savedCohorts.innerHTML === "") {
+    savedCohorts.innerHTML += peopleNumber.innerHTML;
   } else {
-    sNume.innerHTML += ` - ${topNum.innerHTML}`;
+    savedCohorts.innerHTML += ` / ${peopleNumber.innerHTML}`;
   }
-  topNum.innerHTML = 0;
+  peopleNumber.innerHTML = 0;
   count = 0;
 };
 
 document.querySelector(".reset").onclick = function () {
-  sNume.innerHTML = "";
-  topNum.innerHTML = 0;
+  savedCohorts.innerHTML = "";
+  peopleNumber.innerHTML = 0;
   count = 0;
 };
+
+function getRandomColor(){
+  randomColor = Math.floor(Math.random()*16777215).toString(16);
+  return  randomColor;
+}
+
+setInterval(function () {
+  let randomC = getRandomColor();
+  document.querySelector(".main-box").style.backgroundColor = "#" + randomC;
+}, 3000);
+

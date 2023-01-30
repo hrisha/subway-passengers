@@ -3,7 +3,7 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 .main-box {
-  background-color: #fff;
+  background-color: rgb(182, 84, 84);
   position: relative;
   height: 100vh;
 }
@@ -33,20 +33,17 @@ body {
 }
 
 .box button {
-  width: 45%;
+  width: 65%;
   padding: 10px;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
   background-color: #fff;
   border: none;
+  margin: 10px;
 }
 
-@media (max-width: 767px) {
-  .box button {
-    font-size: 13px;
-  }
-}
+
 
 .box .inc {
   color: rgb(4, 112, 4);
@@ -65,8 +62,8 @@ body {
 }
 
 .box .save:hover {
-  color: #fff;
-  background-color: #000;
+  color: rgb(243, 219, 229);
+  background-color: rgb(22, 85, 130);
   transition: 0.5s;
 }
 
@@ -75,7 +72,7 @@ body {
   border: 2px solid #c51a1a;
   position: absolute;
   bottom: 50px;
-  left: 28%;
+  left: 17%;
 }
 .box .reset:hover {
   color: #fff;
